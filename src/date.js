@@ -10,8 +10,11 @@ export default class Date {
     let month = parseInt(mm);
     let day = parseInt(dd);
     let year = parseInt(yyyy);
-    
-    // if (planet === 'earth')
-    // return month + day + year
+
+    if (planet === 'earth') {
+      return month + ', ' + day + ', ' + year;
+    } else {
+      return month + ', ' + day + ', ' + year;
+    }
   }
 }
