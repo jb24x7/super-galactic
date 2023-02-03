@@ -7,6 +7,9 @@ export default class Date {
   }
 
   checkDate(mm, dd, yyyy) {
-
+    let month = parseInt(mm);
+    let day = parseInt(dd);
+    let year = parseInt(yyyy);
+    return month + ', ' + day + ', ' + year;
   }
 }
