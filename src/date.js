@@ -6,10 +6,12 @@ export default class Date {
     this.year = yyyy;
   }
 
-  checkDate(mm, dd, yyyy) {
+  checkDate(mm, dd, yyyy, planet) {
     let month = parseInt(mm);
     let day = parseInt(dd);
     let year = parseInt(yyyy);
-    return month + ', ' + day + ', ' + year;
+    
+    // if (planet === 'earth')
+    // return month + day + year
   }
 }
