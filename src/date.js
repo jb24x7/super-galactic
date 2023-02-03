@@ -13,6 +13,14 @@ export default class Date {
 
     if (planet === 'earth') {
       return month + ', ' + day + ', ' + year;
+    } else if (planet === 'mercury') {
+      return month + ', ' + day + ', ' + year;
+    } else if (planet === 'venus') {
+      return month + ', ' + day + ', ' + year;
+    } else if (planet === 'mars') {
+      return month + ', ' + day + ', ' + year;
+    } else if (planet === 'jupiter') {
+      return month + ', ' + day + ', ' + year;
     } else {
       return month + ', ' + day + ', ' + year;
     }
