@@ -1,29 +1,24 @@
 export default class Date {
 
-  constructor(mm, dd, yyyy) {
-    this.month = mm;
-    this.day = dd;
+  constructor(yyyy) {
     this.year = yyyy;
   }
 
-  checkDate(mm, dd, yyyy, planet, text) {
-    let month = parseInt(mm);
-    let day = parseInt(dd);
-    let year = parseInt(yyyy);
+  checkDate(planet, year) {
     
 
     if (planet === 'earth') {
-    text.innerHTML = "you are " + (2023 - year) + " years old in earth years!";
+    return "you are " + (2023 - year) + " years old in earth years!";
     } else if (planet === 'mercury') {
-      text.innerHTML = "you are " + (2023 - year) + " years old in earth mercury!";
+      return "you are " + ((2023 - year) / .24) + " years old in mercury years!";
     } else if (planet === 'venus') {
-      text.innerHTML = "you are " + (2023 - year) + " years old in earth venus!";
+      return "you are " + ((2023 - year) / .62) + " years old in venus years!";
     } else if (planet === 'mars') {
-      text.innerHTML = "you are " + (2023 - year) + " years old in earth mars!";
+      return "you are " + ((2023 - year) / 1.88) + " years old in mars years!";
     } else if (planet === 'jupiter') {
-      text.innerHTML = "you are " + (2023 - year) + " years old in earth jupiter!";
+      return "you are " + ((2023 - year) / 11.86) + " years old in jupiter years!";
     } else {
-      text.innerHTML = "Please select a planet!";
+      return "Please select a planet!";
     }
   }
 }

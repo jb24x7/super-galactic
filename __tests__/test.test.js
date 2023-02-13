@@ -5,13 +5,8 @@ describe('checkDate', () => {
 
   test('should correctly return a date with month day year', () => {
     const date = new Date();
-    expect(date.checkDate(1,2,2023)).toEqual('1, 2, 2023');
+    expect(date.checkDate('earth', 2023)).toEqual('you are 0 years old in earth years!');
 
   });
 
-  test('should correctly create a date with month day year depending on planet', () => {
-    const date = new Date();
-    expect(date.checkDate(1,2,2023,'earth')).toEqual('1, 2, 2023');
-
-  });
 });

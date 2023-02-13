@@ -7,8 +7,8 @@ window.onload () {
   let button = document.getElementById("button");
 
   button.onclick => {
-
-    checkDate(month, day, year, planet, text);
+    
+    checkDate(planet, year);
 
   }
  
