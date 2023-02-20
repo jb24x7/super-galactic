@@ -79,26 +79,26 @@ describe('checkYearsFuture', () => {
 
   test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
     const date = new Dateclass(2002, 2007, 2025);
-    expect(date.checkYearsFuture('mercury')).toEqual('there has been 66.66666666666667 years since you turned 5 years old in mercury years!');
+    expect(date.checkYearsFuture('mercury')).toEqual('there will be 8.333333333333334 years until you turn 23 years old in mercury years!');
 
   });
 
-  // test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
-  //   const date = new Dateclass(2002, 2007, 2025);
-  //   expect(date.checkYearsFuture('venus')).toEqual('there has been 25.806451612903228 years since you turned 5 years old in venus years!');
+  test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
+    const date = new Dateclass(2002, 2007, 2025);
+    expect(date.checkYearsFuture('venus')).toEqual('there will be 3.2258064516129035 years until you turn 23 years old in venus years!');
 
-  // });
+  });
 
-  // test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
-  //   const date = new Dateclass(2002, 2007, 2025);
-  //   expect(date.checkYearsFuture('mars')).toEqual('there has been 8.51063829787234 years since you turned 5 years old in mars years!');
+  test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
+    const date = new Dateclass(2002, 2007, 2025);
+    expect(date.checkYearsFuture('mars')).toEqual('there will be 1.0638297872340425 years until you turn 23 years old in mars years!');
 
-  // });
+  });
 
-  // test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
-  //   const date = new Dateclass(2002, 2007, 2025);
-  //   expect(date.checkYearsFuture('jupiter')).toEqual('there has been 1.349072512647555 years since you turned 5 years old in jupiter years!');
+  test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
+    const date = new Dateclass(2002, 2007, 2025);
+    expect(date.checkYearsFuture('jupiter')).toEqual('there will be 0.16863406408094436 years until you turn 23 years old in jupiter years!');
 
-  // });
+  });
 
 });

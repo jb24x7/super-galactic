@@ -41,13 +41,13 @@ export default class Dateclass {
     if (planet === 'earth') {
       return "there will be " + (this.futureyear - 2023) + " years until you turn " + (this.futureyear - this.year) + " years old in earth years!";
     } else if (planet === 'mercury') {
-      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / .24) + " years since you turned " + (this.oldyear - this.year) + " years old in mercury years!";
+      return "there will be " + ((this.futureyear - 2023) / .24) + " years until you turn " + (this.futureyear - this.year) + " years old in mercury years!";
     } else if (planet === 'venus') {
-      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / .62) + " years since you turned " + (this.oldyear - this.year) + " years old in venus years!";
+      return "there will be " + ((this.futureyear - 2023) / .62) + " years until you turn " + (this.futureyear - this.year) + " years old in venus years!";
     } else if (planet === 'mars') {
-      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / 1.88) + " years since you turned " + (this.oldyear - this.year) + " years old in mars years!";
+      return "there will be " + ((this.futureyear - 2023) / 1.88) + " years until you turn " + (this.futureyear - this.year) + " years old in mars years!";
     } else if (planet === 'jupiter') {
-      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / 11.86) + " years since you turned " + (this.oldyear - this.year) + " years old in jupiter years!";
+      return "there will be " + ((this.futureyear - 2023) / 11.86) + " years until you turn " + (this.futureyear - this.year) + " years old in jupiter years!";
     }
   }
 }
