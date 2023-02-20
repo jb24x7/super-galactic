@@ -24,17 +24,15 @@ export default class Dateclass {
 
   checkYearsPassed(planet) {
     if (planet === 'earth') {
-      return "there has been " + ((2023 - this.year) - (this.oldyear - this.year)) + " years since you turned " + (this.oldyear - this.year);
+      return "there has been " + ((2023 - this.year) - (this.oldyear - this.year)) + " years since you turned " + (this.oldyear - this.year) + " years old in earth years!";
     } else if (planet === 'mercury') {
-      return "you are " + ((2023 - this.year) / .24) + " years old in mercury years!";
+      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / .24) + " years since you turned " + (this.oldyear - this.year) + " years old in mercury years!";
     } else if (planet === 'venus') {
-      return "you are " + ((2023 - this.year) / .62) + " years old in venus years!";
+      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / .62) + " years since you turned " + (this.oldyear - this.year) + " years old in venus years!";
     } else if (planet === 'mars') {
-      return "you are " + ((2023 - this.year) / 1.88) + " years old in mars years!";
+      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / 1.88) + " years since you turned " + (this.oldyear - this.year) + " years old in mars years!";
     } else if (planet === 'jupiter') {
-      return "you are " + ((2023 - this.year) / 11.86) + " years old in jupiter years!";
-    } else {
-      return "Please select a planet!";
+      return "there has been " + (((2023 - this.year) - (this.oldyear - this.year)) / 11.86) + " years since you turned " + (this.oldyear - this.year) + " years old in jupiter years!";
     }
   }
 }
