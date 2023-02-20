@@ -1,8 +1,8 @@
-# (Application Name)
+# Super Galactic
 
-#### (Brief Description of Application)
+#### This aplication allows the user to imput their birthday and will return their age that they would have based on the planet that they select.
 
-#### By (Your Name Here)
+#### By James Provance
 
 ## Technologies Used
 
