@@ -51,20 +51,20 @@ describe('checkYearsPassed', () => {
 
   test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
     const date = new Dateclass(2002, 2007);
-    expect(date.checkYearsPassed('venus')).toEqual('there has been 16 years since you turned 5');
+    expect(date.checkYearsPassed('venus')).toEqual('there has been 25.806451612903228 years since you turned 5 years old in venus years!');
 
   });
 
-  // test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
-  //   const date = new Dateclass(2002, 2007);
-  //   expect(date.checkYearsPassed('mars')).toEqual('there has been 16 years since you turned 5');
+  test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
+    const date = new Dateclass(2002, 2007);
+    expect(date.checkYearsPassed('mars')).toEqual('there has been 8.51063829787234 years since you turned 5 years old in mars years!');
 
-  // });
+  });
 
-  // test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
-  //   const date = new Dateclass(2023, 2021);
-  //   expect(date.checkYearsPassed('jupiter')).toEqual('there has been 16 years since you turned 5');
+  test('should correctly return a string saying how many years have passed on the planet since your last birthday', () => {
+    const date = new Dateclass(2002, 2007);
+    expect(date.checkYearsPassed('jupiter')).toEqual('there has been 1.349072512647555 years since you turned 5 years old in jupiter years!');
 
-  // });
+  });
 
 });
