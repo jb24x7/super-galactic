@@ -27,7 +27,7 @@ Gives you back your age in different planets years based on the option you slect
 
 ## Known Bugs
 
-* doesn't print the results to the page
+* No known bugs
 
 ## License
 MIT License
