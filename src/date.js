@@ -1,8 +1,7 @@
 export default class Dateclass {
 
-  constructor(mm, dd, yyyy, oldyear) {
-    this.month = mm;
-    this.day = dd;
+  constructor(yyyy, oldyear) {
+
     this.year = yyyy;
     this.oldyear = oldyear;
   }
@@ -25,7 +24,7 @@ export default class Dateclass {
 
   checkYearsPassed(planet) {
     if (planet === 'earth') {
-      return "there has been " + ((2023 - this.year) - this.oldyear) + " years since you turned " + (2023 - this.oldyear);
+      return "there has been " + ((2023 - this.year) - (this.oldyear - this.year)) + " years since you turned " + (this.oldyear - this.year);
     } else if (planet === 'mercury') {
       return "you are " + ((2023 - this.year) / .24) + " years old in mercury years!";
     } else if (planet === 'venus') {
